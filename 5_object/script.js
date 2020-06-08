@@ -1,6 +1,6 @@
 "use strict";
 /*
-let car = {
+const car = {
     make: "BMW",
     model: "E36",
     year: "2005",
@@ -12,7 +12,7 @@ car.showCarDate = function () {
 }
 
 car.calcTimeTravel = function (distance) {
-    let time;
+    const time;
 time = distance / +car.speed;
 if (time<4) { 
     return time;
@@ -122,7 +122,7 @@ return {result1, result2}
                      return {result1, result2}; 
                 };
                 console.log (DrobeCut(firstDrobe));  */
-let time = {
+const time = {
     hour: 1,
     min : 20,
     sec : 30,
