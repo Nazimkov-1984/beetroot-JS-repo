@@ -38,7 +38,7 @@ let secondDrobe = {
     chislitel: 1,
     znamenatel: 6,
 };
-/*
+
 function DrobePlus (firstDrobe, secondDrobe) { //ФУКЦИЯ СЛОЖЕНИЯ ДВУХ ДРОБЕЙ 
     let result1, result2, A = [], fDop = 0, secDop = 0, nok = 0;
     A[0] = +firstDrobe.znamenatel;
@@ -57,14 +57,15 @@ function DrobePlus (firstDrobe, secondDrobe) { //ФУКЦИЯ СЛОЖЕНИЯ �
        a = Math.abs(c*A[ i ])/(a+b);
      }
     return a;} // возвращаем НОК  
-  nok = (NOK(A)) ;
-fDop = nok/firstDrobe.znamenatel; // допольнительный множитель первой дроби
-secDop = nok/secondDrobe.znamenatel;// дополнительный множитель второй дроби
+  NOK(A);
+fDop = a/firstDrobe.znamenatel; // допольнительный множитель первой дроби
+secDop = a/secondDrobe.znamenatel;// дополнительный множитель второй дроби
 result1 = (firstDrobe.chislitel*fDop)+(secondDrobe.chislitel*secDop);
 result2 = nok;
 return {result1, result2}
     };      
-    
+    console.log (DrobePlus(firstDrobe,secondDrobe));
+    /*
 function DrobeMinus (firstDrobe, secondDrobe) { // ФУНКЦИЯ ВЫЧИТАНИЯ ДВУХ ДРОБЕЙ 
     let result1, result2, A = [], fDop = 0, secDop = 0, nok = 0;
     A[0] = +firstDrobe.znamenatel;
@@ -89,7 +90,7 @@ secDop = nok/secondDrobe.znamenatel;// дополнительный множит
 result1 = (firstDrobe.chislitel*fDop)-(secondDrobe.chislitel*secDop);
 result2 = nok;
 return {result1, result2}
-    };      */
+    };      
     /*
     function DrobeMultiply (firstDrobe, secondDrobe) { //ФУКЦИЯ УМНОЖЕНИЯ ДВУХ ДРОБЕЙ 
         let result1, result2;
@@ -122,6 +123,7 @@ return {result1, result2}
                      return {result1, result2}; 
                 };
                 console.log (DrobeCut(firstDrobe));  */
+                /*
 const time = {
     hour: 1,
     min : 20,
@@ -161,4 +163,4 @@ function changeTimeOnHour (time, hour) {
     time.hour = time.hour + hour;
     return time; 
     };
-    console.log (changeTimeOnHour (time, 2));
+    console.log (changeTimeOnHour (time, 2)); */

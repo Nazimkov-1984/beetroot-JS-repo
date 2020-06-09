@@ -1,64 +1,51 @@
-"use strict"
+"use strict";
 /*
-let productApple = {
+const productApple = {
     name: "apple",
     quantity: 10,
     bought: false,
 };
-let  productCorn = {
+const  productCorn = {
     name: "corn",
     quantity: 5,
     bought: false,
 };
-let  productMilk = {
+const  productMilk = {
     name: "milk",
     quantity: 5,
     bought: true,
 };
-let productWater = {
+const productWater = {
     name: "mineral water",
     quantity: 2,
     bought: false,
-}
-let productSoap = {
+};
+const productSoap = {
     name: "soap",
     quantity: 1,
     bought: false,
-}
-let shoppingList = [productApple, productCorn, productMilk];
-
-function sortByBought (arr) {
+};
+const shoppingList = [productApple, productCorn, productMilk];
+/*
+function sortByBought (arr) { // сортировка списка по купленным-не купленным 
     arr.sort ((a,b) => a.bought === false ? 1 : -1);
 }
-
 sortByBought (shoppingList);
-
 console.log (shoppingList); 
 
-
-
-function addInShoppingList (arr,product){ // добавление элемента в массив 
-    function isUseInMassiv (arr, product) {
-        for ( let i = 0; i < arr.length; i++) {
-            if (arr[i]==product) {
-                arr[i].quantity++;
-                return true;
-            }
-             else {
-                return false;
-            }
-        }
-       };
-if (isUseInMassiv(arr, product) === false) {
-    arr.push (product);
-} else {
-    
-}
+function addInShoppingList (arr, product){ // добавление продукта к списку покупок 
+   for (let i=0; i<arr.length; i++){
+       if (arr.includes(product)===true){
+           arr[i].quantity++;
+       } else {
+           arr.push(product);
+       }
+   }
 };
-addInShoppingList(shoppingList, productMilk); // вызов функции добавления элемента в массив
+addInShoppingList(shoppingList, productCorn); // вызов функции добавления элемента в массив
 console.log (shoppingList); // вывод в консоль элемента добавленного в массив 
 
-function buyProduct (arr, productName) {
+function buyProduct (arr, productName) { // функция "Покупка продукта"
     for ( let i= 0; i< arr.length; i++) {
         if (arr[i].name === productName){
             arr[i].bought = true; 
@@ -68,7 +55,7 @@ function buyProduct (arr, productName) {
 
 buyProduct(shoppingList,"apple");
 console.log(shoppingList); //выводим в консоль массив где "яблоко" отмечено как купленное 
-
+ */ 
 const objBanana = {
     name: "banana",
     quantity: 5,
@@ -84,7 +71,7 @@ objSoap = {
     quantity: 3,
     price: 20,
 };
-let chekShop = [objBanana,objMilk, objSoap];
+const chekShop = [objBanana,objMilk, objSoap];/*
 function printChek (arr) { // фунция печати чека на экран
     for (let i = 0; i < arr.length; i++) {
         console.log (`${i}) Product- ${arr[i].name}; Qantity - ${arr[i].quantity} p. ; price- ${arr[i].price} dollars.`);
@@ -94,16 +81,23 @@ function printChek (arr) { // фунция печати чека на экран
 printChek(chekShop); // выводим на экран чек 
 
 function summChek (arr) { // функция подсчета суммы всех покупок
-    let summ = 0;
- for ( let i=0; i< arr.length; i++) {
-     summ = summ + arr[i].price;
- };
- return summ;
+    const initialValue = 0;
+    let result = 0;
+    
+    result = arr.reduce(function(accumulator, currentValue){return accumulator +currentValue.price}, initialValue);
+    return result;
 }
 
-console.log ("Total: "+summChek(chekShop)+" dollars"); // выводим на экран сумму покупок
-
-
+console.log ("Total: " +summChek(chekShop)+ " $"); // выводим на экран сумму покупок
+*/
+function bigPriceInChek (arr) { //функция получения самого дорого товара в чеке
+    let result = 0;
+    const initialValue = 0;
+    result = arr.reduce(function(a, b){return Math.max(result, b.price);}, initialValue);
+    return result;
+}
+console.log ("The most expensive purchase: "+bigPriceInChek(chekShop)+" $");  // выводим самую дорогую покупку в консоль 
+/*
 function mediumPriceInChek (arr) { // функция подсчета средней стоимости товара в чеке 
     let result = 0; 
     result = summChek(arr) / arr.length;
@@ -130,7 +124,7 @@ value : "red"
         document.write (` <p style = "${style[0].style}:${style[0].value}; ${style[1].style}:${style[1].value};${style[2].style}:${style[2].value};">${text}</p>`);
     }
 
-    createText (cssStyle, "Hello world"); // выводим на экран стилизованный текст */
+    createText (cssStyle, "Hello world"); // выводим на экран стилизованный текст 
 
 const objClass101 = {
     name: "First",
@@ -198,3 +192,4 @@ function classSortQuantity (arr) { // функция сортировки кла
         classSortQuantity (clasess);
         console.log (clasess); // выоводим отсортированный массив аудиторий  на экран 
 
+*/
