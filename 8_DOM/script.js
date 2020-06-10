@@ -39,7 +39,7 @@ const playList = [
    document.body.append(ol);
 
 
-       for (let prop in playList) {
+       for (let prop in playList) { // выводим в цикле список
         const li= document.createElement('li');
            ol.append(li);
         li.append(playList[prop].author + ' - ');
