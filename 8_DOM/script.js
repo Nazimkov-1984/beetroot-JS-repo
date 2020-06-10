@@ -35,6 +35,7 @@ const playList = [
     ];
     
     const ol = document.createElement('ol');
+<<<<<<< HEAD
    
    document.body.append(ol);
 
@@ -47,3 +48,15 @@ const playList = [
       } 
    
       
+=======
+    let li = [document.createElement('li')];
+   document.body.append(ol);
+
+   ol.prepend(liFirst);
+   ol.prepend(liSec);
+   liSec.prepend(' '+playList[0].song);
+   liSec.prepend(playList[0].author);
+   liFirst.prepend(' '+playList[1].song);
+   liFirst.prepend(playList[1].author);
+  
+>>>>>>> 004709c047eb62801c0230e0b2f83a3eb19677be
