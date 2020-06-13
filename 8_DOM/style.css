@@ -1,0 +1,51 @@
+
+body {
+    min-height: 100vh;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    width: 150px;
+    height: 80px;
+    transition: all .7s;
+    
+}
+button:hover {
+    color: red;
+    cursor: pointer;
+}
+.modalwrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.modalDialog {
+    width: 300px;
+    display: none;
+    text-align: center;
+    background-color: coral;
+    padding: 50px 50px;
+    border: 2px solid grey;
+}
+
+.red, .yellow, .green {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+#red {
+background-color: red;
+}
+#yellow {
+    background-color: transparent;
+}
+#green {
+    background-color: transparent;
+}
+.btnS {
+    margin-top: 20px;
+}

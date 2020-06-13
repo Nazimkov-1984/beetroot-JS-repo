@@ -35,7 +35,6 @@ const playList = [
     ];
     
     const ol = document.createElement('ol');
-<<<<<<< HEAD
    
    document.body.append(ol);
 
@@ -47,16 +46,42 @@ const playList = [
         li.append(playList[prop].song);
       } 
    
-      
-=======
-    let li = [document.createElement('li')];
-   document.body.append(ol);
+   "use strict"; 
+const btn = document.getElementById('button'),
+      modal = document.getElementById('myModal'),
+      modalButton = document.getElementById('modalButton');
 
-   ol.prepend(liFirst);
-   ol.prepend(liSec);
-   liSec.prepend(' '+playList[0].song);
-   liSec.prepend(playList[0].author);
-   liFirst.prepend(' '+playList[1].song);
-   liFirst.prepend(playList[1].author);
-  
->>>>>>> 004709c047eb62801c0230e0b2f83a3eb19677be
+btn.onclick = function () {
+    modal.style.display = "block";
+};
+
+modalButton.onclick = function() {
+    modal.style.display = "none";
+}
+
+const btnS = document.getElementById('btnS'),
+        red = document.getElementById('red'),
+        yellow = document.getElementById('yellow'),
+        green = document.getElementById('green');
+
+
+btnS.onclick = function() {
+let compstyle = window.getComputedStyle(red),
+    compstyle1 = window.getComputedStyle(yellow),
+    comstyle2 = window.getComputedStyle(green);
+
+    if (compstyle.backgroundColor ==="rgb(255, 0, 0)") {
+        yellow.style.backgroundColor = 'yellow';
+        red.style.backgroundColor = "transparent";
+    } else {
+    if (compstyle1.backgroundColor ==="rgb(255, 255, 0)") {
+            green.style.backgroundColor = "green";
+            yellow.style.backgroundColor = "transparent";
+            console.log(compstyle.backgroundColor,compstyle1.backgroundColor,compstyle2.backgroundColor); 
+        } } 
+    if (comstyle2.backgroundColor === "rgb(0, 128, 0)") {
+            red.style.backgroundColor = 'red';
+            green.style.backgroundColor = 'transparent';
+        } 
+}; 
+      
