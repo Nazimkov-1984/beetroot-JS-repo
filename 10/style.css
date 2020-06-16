@@ -54,10 +54,11 @@ font-family: 'Lato', sans-serif;
     padding-bottom: 35px;
 
 }
+.link__wrapper:hover {
+    cursor: pointer;
+}
 .link-wrapper-active{
-
     border-bottom: 1px solid white;
-
 }
 .link__wrapper:last-child{
     margin-right: 0px;
@@ -100,6 +101,10 @@ font-family: 'Lato', sans-serif;
 .main-items__text__header-wrapper {
     display: flex;
     margin-bottom: 44px;
+}
+.chart-text {
+    font-size: 10px;
+    color: white;
 }
 .main-items__text__header-wrapper__text {
     display: flex;

@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     
     
-	let tabs = document.querySelectorAll('.link-wrapper-link'),
+    const tabs = document.querySelectorAll('.link-wrapper-link'),
 		tabsContent = document.querySelectorAll('.main-items'),
         tabsParent = document.querySelector('.tab-link'),
         linkwrapper = document.querySelectorAll('.link__wrapper');
@@ -31,6 +31,18 @@ window.addEventListener('DOMContentLoaded', function() {
 
     tabsParent.addEventListener ('click', (event) => {
         const target = event.target;
+        if (target && target.classList.contains('link__wrapper')) {
+            linkwrapper.forEach ((item, i) => {
+                if (target == item) {
+                    hideTabContent();
+                    showTabContent(i);
+                }
+            });
+            event.preventDefault();
+        }
+    });
+    tabsParent.addEventListener ('click', (event) => {
+        const target = event.target;
         if (target && target.classList.contains('link-wrapper-link')) {
             tabs.forEach ((item, i) => {
                 if (target == item) {
@@ -38,6 +50,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     showTabContent(i);
                 }
             });
+            event.preventDefault();
         }
     });
 });
