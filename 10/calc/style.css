@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calc {
+    
+}
+.calc__button-wrapper_1, .calc__button-wrapper_2, .calc__button-wrapper_3 {
+    display: flex;
+}
+.calc__button-wrapper__button {
+    padding: 20px 20px;
+    border: 1px solid black;
+}
+.calc__button-wrapper__button-zero {
+    width: 150px;
+    border: 1px solid black;
+    padding: 20px 0px;
+    text-align: center;
+}

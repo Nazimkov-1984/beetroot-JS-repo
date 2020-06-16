@@ -13,10 +13,25 @@
     background-size: cover;
     padding-top: 145px;
     padding-bottom: 145px;
+    position: relative;
+    z-index: 1;
+}
+.wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 80%;
+    background: #292D3E;
 }
 .card-wrapper {
     width: 600px;
     height: 542px;
+    position: relative;
+    z-index: 3;
 }
 .tab-link {
     background-color: #2B3040;
@@ -36,8 +51,13 @@ font-family: 'Lato', sans-serif;
     flex-direction: column;
     margin-right: 72px;
     align-items: center;
-    border-bottom: 1px solid white;
     padding-bottom: 35px;
+
+}
+.link-wrapper-active{
+
+    border-bottom: 1px solid white;
+
 }
 .link__wrapper:last-child{
     margin-right: 0px;
@@ -62,6 +82,10 @@ font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #B7BACD;
 
+}
+.link-wrapper-link-active {
+    font-weight: bold;
+    color: white;
 }
 .main-items__img {
     display: flex;
