@@ -26,21 +26,21 @@ if (time>8) {
 };
 
 console.log(car.calcTimeTravel(720));
-*/
 
 
-let firstDrobe = {
+
+const firstDrobe = {
     chislitel: 6,
     znamenatel: 24,
 };
 
-let secondDrobe = {
+const secondDrobe = {
     chislitel: 1,
     znamenatel: 6,
 };
 
 function DrobePlus (firstDrobe, secondDrobe) { //ФУКЦИЯ СЛОЖЕНИЯ ДВУХ ДРОБЕЙ 
-    let result1, result2, A = [], fDop = 0, secDop = 0, nok = 0;
+    let result1, result2, A = [], firstDop = 0, secDop = 0, nok = 0;
     A[0] = +firstDrobe.znamenatel;
     A[1] = +secondDrobe.znamenatel;
     if (firstDrobe.znamenatel === secondDrobe.znamenatel) { //вычисляем если знаменатели равны
@@ -58,16 +58,16 @@ function DrobePlus (firstDrobe, secondDrobe) { //ФУКЦИЯ СЛОЖЕНИЯ �
      }
     return a;} // возвращаем НОК  
   NOK(A);
-fDop = a/firstDrobe.znamenatel; // допольнительный множитель первой дроби
+firstDop = a/firstDrobe.znamenatel; // допольнительный множитель первой дроби
 secDop = a/secondDrobe.znamenatel;// дополнительный множитель второй дроби
-result1 = (firstDrobe.chislitel*fDop)+(secondDrobe.chislitel*secDop);
+result1 = (firstDrobe.chislitel*firstDop)+(secondDrobe.chislitel*secDop);
 result2 = nok;
 return {result1, result2}
     };      
     console.log (DrobePlus(firstDrobe,secondDrobe));
-    /*
+    */
 function DrobeMinus (firstDrobe, secondDrobe) { // ФУНКЦИЯ ВЫЧИТАНИЯ ДВУХ ДРОБЕЙ 
-    let result1, result2, A = [], fDop = 0, secDop = 0, nok = 0;
+    let result1, result2, A = [], firstDop = 0, secDop = 0, nok = 0;
     A[0] = +firstDrobe.znamenatel;
     A[1] = +secondDrobe.znamenatel;
     if (firstDrobe.znamenatel === secondDrobe.znamenatel) { //вычисляем если знаменатели равны
@@ -85,9 +85,9 @@ function DrobeMinus (firstDrobe, secondDrobe) { // ФУНКЦИЯ ВЫЧИТАН
      }
     return a;} // возвращаем НОК  
   nok = (NOK(A)) ;
-fDop = nok/firstDrobe.znamenatel; // допольнительный множитель первой дроби
+firstDop = nok/firstDrobe.znamenatel; // допольнительный множитель первой дроби
 secDop = nok/secondDrobe.znamenatel;// дополнительный множитель второй дроби
-result1 = (firstDrobe.chislitel*fDop)-(secondDrobe.chislitel*secDop);
+result1 = (firstDrobe.chislitel*firstDop)-(secondDrobe.chislitel*secDop);
 result2 = nok;
 return {result1, result2}
     };      
