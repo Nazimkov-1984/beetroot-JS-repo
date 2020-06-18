@@ -74,7 +74,24 @@ constructor (arr) {
     this.arr = arr;
 }
 getHtml (arr) {
-document.write(` <table border = "1"><tr><td>First Name</td> <td>Last Name</td> <td>Age</td> <td>Position</td></tr><tr><td>${this.arr[0].firstName}</td><td>${this.arr[0].lastName}</td><td>${this.arr[0].age}</td> <td>${this.arr[0].position}</td></tr><tr><td>${this.arr[0].firstName}</td><td>${this.arr[1].lastName}</td><td>${this.arr[1].age}</td> <td>${this.arr[1].position}</td></tr> <tr><td>${this.arr[2].firstName}</td><td>${this.arr[2].lastName}</td><td>${this.arr[2].age}</td> <td>${this.arr[2].position}</td></tr></table>`);
+    document.write(`<table id="table" border = "1"> <tr><td> First Name </td><td> Second Name </td><td> Age </td><td> Position </td></tr> </table>`);
+    const table = document.getElementById('table');
+    for (let i = 0; i < arr.length; i++) {
+    const row = document.createElement('TR');
+    table.appendChild(row);
+    const firstCell = document.createElement("TD");
+    const secondCell = document.createElement("TD");
+    const thirdCell = document.createElement("TD");
+    const fourCell = document.createElement("TD");
+    row.appendChild(firstCell);
+    row.appendChild(secondCell);
+    row.appendChild(thirdCell);
+    row.appendChild(fourCell);
+    firstCell.innerHTML = bankEmployees[i].firstName;
+    secondCell.innerHTML = bankEmployees[i].lastName;
+    thirdCell.innerHTML = bankEmployees[i].age;
+    fourCell.innerHTML = bankEmployees[i].position;
+    }
 }
 }
 
