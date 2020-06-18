@@ -66,10 +66,10 @@ for (let i = 0; i< arr.length; i++) { // записываем элементы �
     (arr[i][0]) = newArr [i];
 }
 let mytd = document.querySelectorAll('td');
-
 while(table.rows.length > 1) {
   table.deleteRow(1);
 }
+
 fillTable(table,arr); // перерисовываем таблицу
   }
   
@@ -85,6 +85,7 @@ for (let i = 0; i< arr.length; i++) { // записываем элементы �
 let td = document.querySelectorAll('td');
 while(table.rows.length > 1) {
   table.deleteRow(1);
+}
 fillTable(table,arr); // перерисовываем таблицу
 }
 
@@ -100,6 +101,7 @@ for (let i = 0; i< arr.length; i++) { // записываем элементы �
 let td = document.querySelectorAll('td');
 while(table.rows.length > 1) {
   table.deleteRow(1);
+}
 fillTable(table,arr); // перерисовываем таблицу
 }
 
@@ -115,6 +117,7 @@ for (let i = 0; i< arr.length; i++) { // записываем элементы �
 let td = document.querySelectorAll('td');
 while(table.rows.length > 1) {
   table.deleteRow(1);
+}
 fillTable(table,arr); // перерисовываем таблицу
 }
 
