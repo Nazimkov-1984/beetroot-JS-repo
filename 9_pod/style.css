@@ -1,0 +1,36 @@
+#textarea_text {
+    display: none;
+}
+#div_text {
+    width: 50%;
+    text-align: center;
+}
+body {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table {
+    margin-top: 50px;
+}
+td {
+    visibility: visible ;
+}
+#block {
+    margin-top: 50px;
+    background-color: gray;
+    min-height: 100px;
+    min-width: 200px;
+    position: relative;
+    width: 400px;
+  }
+  #block_resize {
+    bottom: 0;
+    cursor: se-resize;
+    height: 12px;
+    margin-top: 9px;
+    position: absolute;
+    right: 0;
+    width: 12px;
+  }
