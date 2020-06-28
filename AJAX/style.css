@@ -1,0 +1,50 @@
+.header {
+    text-align: center;
+    padding: 50px, 0px, 50px,0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.search-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+#film {
+    
+    background-color:#dcdcdc;
+    height: 40px;
+}
+#btn {
+    width:165px;
+    background-color: gray;
+    transition: all .7s;
+    text-transform: uppercase;
+}
+#btn:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+ol li {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    font-weight: bold;
+    align-items: center;
+    
+}
+ol {
+    display: flex;
+    flex-wrap: wrap;
+}
+img {
+    width: 150px;
+    height: 217px;
+}
+label {
+    margin-bottom: 20px;
+    color: #494949;
+}
